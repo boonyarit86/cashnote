@@ -6,7 +6,8 @@
 
 ### UI Requirement
 
-- create a page named “Account”
+- create a new menu in the sidebar named "Account Group" with an icon
+- create a page named “Account” for using in layout
 - there must have 2 section
 - the first section is “Assets”
 - the second is “Liabilities”
