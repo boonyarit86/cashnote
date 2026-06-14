@@ -5,9 +5,12 @@ import { NODE_ENV, NODE_PORT } from './constants';
 
 @Injectable()
 export class AppService {
-  constructor(private configService: ConfigService<ConfigServiceType>) {}
-  getConfig() {
+  constructor(
+    private configService: ConfigService<ConfigServiceType>,
+  ) {}
+  async getConfig() {
     const dbConfig = this.configService.get('database');
+
     return {
       app: {
         environment: NODE_ENV,
